@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 50px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f36da4, #FDD9E5);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center both containers */
+    padding: 10px;
+}
+
+h1 {
+    font-family: garamond;
+    text-align: center;
+    color: #333;
+}
+
+.container h1 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* Form Container for Date and Task inputs */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between Date and Task inputs */
+    margin-bottom: 0; /* Removed margin */
+}
+
+form input, button {
+    padding: 10px;
+    margin: 0;
+}
+
+form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d07994;
+    color: white;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #c33663;
+}
+
+/* Task Table Container */
+.table-container {
+    width: 100%;
+    max-width: 800px; /* Set a wider width for the table */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+.actions button {
+    background-color: #dc6390;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.actions button.delete {
+    background-color: #88334f;
+}
+
+.actions button:hover {
+    opacity: 0.9;
+}

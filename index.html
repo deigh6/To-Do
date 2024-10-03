@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List<img src="icon.png"></h1>
+        
+        <!-- Form Container for Date and Task -->
+        <div class="form-container">
+            <form id="taskForm">
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+                <label for="task">Task:</label>
+                <input type="text" id="task" placeholder="Enter your task" required>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+
+        <!-- Task Table Container -->
+        <div class="table-container">
+            <table id="taskTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Task</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="taskList">
+                    <!-- Tasks will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
